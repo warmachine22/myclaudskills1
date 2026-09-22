@@ -1,0 +1,28 @@
+{
+  "name": "Candidate name",
+  "slug": "candidate",
+  "headline": "Role focus, experience, and differentiators",
+  "graduation_month": "",
+  "currently_enrolled": false,
+  "has_advanced_degree": false,
+  "years_experience": 0,
+  "max_years_required": 2,
+  "stretch_years": 2,
+  "work_authorization": "replace with candidate status",
+  "locations": {
+    "primary": ["YOUR_CITY"],
+    "primary_label": "Primary market",
+    "near": ["NEARBY_CITY"],
+    "near_label": "Nearby market",
+    "remote_ok": true,
+    "relocate_ok": false
+  },
+  "min_stack_score": 6,
+  "strong_skills": {},
+  "weak_skills": {},
+  "title_include": ["software\\s+engineer", "engineer", "developer"],
+  "title_exclude": ["senior", "staff", "principal"],
+  "company_exclude": [],
+  "goals": "",
+  "output_path": "job-links.html"
+}

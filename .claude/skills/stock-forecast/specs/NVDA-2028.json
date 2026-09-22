@@ -1,0 +1,73 @@
+{
+ "ticker": "NVDA",
+ "period_label": "FY2028 (year ending January 2028)",
+ "period_end": "2028-01-31",
+ "basis": "GAAP; NVIDIA's GAAP and non-GAAP gross margins are guided at the same level",
+ "method": "Built forward from the fiscal 2027 base the company has already substantially reported or guided, then grown at the rate management put on fiscal 2028. Two of the four quarters of fiscal 2027 are actuals ($81.6bn and $96.2bn), the third is guided ($108bn +/-2%), and only the fourth is estimated. External corroboration for the demand assumption comes from the customers' own filings rather than from any broker: quarterly capital expenditure at Microsoft, Alphabet, Amazon and Meta, read from SEC XBRL, is running near $140bn a quarter and grew between 47% and 108% year on year in the most recent comparable quarters.",
+ "lines": [
+  {
+   "id": "revenue",
+   "label": "Revenue",
+   "type": "growth",
+   "base_value": 408000,
+   "low": 0.55,
+   "base": 0.7,
+   "high": 0.85,
+   "source": "Q2 FY2027 call, 26 Aug 2026: 'We expect to grow revenue by approximately 70% in fiscal 2028. This is a supply-constrained outlook.'",
+   "rationale": "Base of $408bn for fiscal 2027 is Q1 actual $81.6bn plus Q2 actual $96.2bn plus the guided $108bn for Q3 plus roughly $122bn for Q4, the latter assuming 13% sequential growth against the 12% implied by the Q3 guide and the 19.5% delivered a year earlier. The base case takes management's 70% at face value. The high case of 85% reflects the CFO's statement that customer forecasts point to growth doubling and that 70% is a supply cap, not a demand ceiling. The low case of 55% assumes the supply chain disappoints against a target management has already said it is straining to meet."
+  },
+  {
+   "id": "gross_margin",
+   "label": "Gross margin",
+   "type": "margin_of",
+   "of": "revenue",
+   "low": 0.71,
+   "base": 0.725,
+   "high": 0.74,
+   "source": "Q2 FY2027 call: margins 'bottom in Q4 in the 71%-72% range before settling at 72%-73% in fiscal year 2028 as executed price increases take effect in Q1.'",
+   "rationale": "The base sits at the midpoint of management's own 72-73% guide. The low case holds the Q4 trough for the full year, which is what happens if memory costs keep rising faster than the price increases recover - the CFO said the magnitude 'exceeded our prior expectations' once already. The high case assumes the price increases stick better than guided, which is the only route back toward the 75% run rate just reported."
+  },
+  {
+   "id": "opex",
+   "label": "Operating expense",
+   "type": "growth",
+   "base_value": 35076,
+   "low": 0.45,
+   "base": 0.38,
+   "high": 0.3,
+   "source": "Q2 FY2027 call: full-year fiscal 2027 opex 'to grow in the low 50s'; fiscal 2026 operating expense of $23,076m derived from reported gross profit less operating income.",
+   "rationale": "Fiscal 2027 opex is taken as $23,076m grown 52%, giving $35,076m. For fiscal 2028 the base assumes growth decelerates to 38% against revenue growing 70% - continued operating leverage, but less than the company has been delivering, because headcount and compute costs for its own AI tooling are rising. The low column carries the HIGHER cost (45%), since each case is a coherent scenario."
+  },
+  {
+   "id": "other_income",
+   "label": "Other income, net",
+   "type": "absolute",
+   "low": 2500,
+   "base": 3000,
+   "high": 3500,
+   "source": "Reported interest and investment income against roughly $60bn of cash and investments, less interest on $32.4bn of long-term debt per the 10-Q.",
+   "rationale": "Net interest income on a large and growing cash pile, partly offset by debt service. Small relative to operating income and not a swing factor; the range simply brackets the rate path."
+  },
+  {
+   "id": "tax_rate",
+   "label": "Tax rate",
+   "type": "rate",
+   "low": 0.18,
+   "base": 0.17,
+   "high": 0.16,
+   "source": "Q2 FY2027 call: 'we continue to expect GAAP and non-GAAP tax rates to be between 16% and 18%' for fiscal 2027.",
+   "rationale": "Midpoint of the guided range for the base; the guided bounds for the cases."
+  },
+  {
+   "id": "shares",
+   "label": "Diluted shares (m)",
+   "type": "absolute",
+   "low": 24200,
+   "base": 24000,
+   "high": 23800,
+   "source": "10-Q for the quarter ended 26 July 2026: 24,285m diluted shares; $19,312m of buybacks in the prior quarter and $20bn in the reported quarter.",
+   "rationale": "Buybacks of roughly $20bn a quarter retire in the order of 90m shares at current prices, against stock compensation issuance. Net shrinkage of about 1-1.5% a year is assumed. The low column carries the HIGHER share count."
+  }
+ ],
+ "notes": "Each column is a coherent scenario rather than a single flexed input, so cost, tax and share-count lines carry their EPS-unfavourable value in the low column. The estimate is GAAP; NVIDIA guides GAAP and non-GAAP gross margin at the same level and the gap between the two measures is small relative to the other names on this dashboard."
+}

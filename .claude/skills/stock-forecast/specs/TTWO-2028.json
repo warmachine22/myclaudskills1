@@ -1,0 +1,72 @@
+{
+ "ticker": "TTWO",
+ "period_label": "FY2028 (year ending March 2028)",
+ "period_end": "2028-03-31",
+ "basis": "adjusted / management basis, matching how the company and the market measure it",
+ "method": "Fiscal 2028 is the first full year after the 19 November 2026 launch of Grand Theft Auto VI - no launch spike, but twelve months of whatever recurrent spending the title establishes. It is built off the fiscal 2027 revenue the company has guided in full, then adjusted for the one thing the guidance cannot settle: whether the year after a launch grows or shrinks. The only directly comparable precedent is unhelpful in the bullish direction - Grand Theft Auto V launched in September 2013, and Take-Two's revenue fell from $2.35bn in fiscal 2014 to $1.82bn in fiscal 2015, a decline of 23%. What changed since is Grand Theft Auto Online, which turned a one-off sale into thirteen years of recurrent spending, and that mechanism is the entire reason a bullish fiscal 2028 is arguable.",
+ "lines": [
+  {
+   "id": "revenue",
+   "label": "Revenue",
+   "type": "growth",
+   "base_value": 8000,
+   "low": 0.0,
+   "base": 0.125,
+   "high": 0.31,
+   "source": "Q1 FY2027 call, 7 Aug 2026: fiscal 2027 net bookings guided $8.0-8.2bn and GAAP net revenue $7.9-8.1bn, reiterated; Grand Theft Auto VI launching 19 November 2026 at an $80 base price with two SKUs.",
+   "rationale": "Fiscal 2027 base of $8.0bn is the low end of management's own GAAP revenue guide, chosen because the CEO explicitly declined to raise it on record pre-orders and warned that demand may have been pulled forward. For fiscal 2028 the base assumes 12.5% growth: a full twelve months of Grand Theft Auto VI recurrent spending against roughly four and a half months in fiscal 2027, offset by the absence of launch unit sales. The low case is flat, which still implies recurrent spending fully replaces the launch. The high case of 31% assumes Grand Theft Auto Online VI compounds the way its predecessor did."
+  },
+  {
+   "id": "gross_margin",
+   "label": "Gross margin (adjusted)",
+   "type": "margin_of",
+   "of": "revenue",
+   "low": 0.52,
+   "base": 0.56,
+   "high": 0.6,
+   "source": "Q1 FY2027 call: fiscal 2027 cost of revenue guided $3.54-3.66bn against $7.9-8.1bn of revenue, implying roughly 55% GAAP gross margin; recurrent consumer spending was 84% of net bookings in the June quarter; the business is over 90% digital.",
+   "rationale": "Mix is the driver. Recurrent spending and digital distribution carry materially higher margin than boxed unit sales, so a year with no launch and a high recurrent share should carry a better margin than the launch year itself. The base assumes 56%. The low case assumes the recurrent mix disappoints and margin stays near the launch-year level."
+  },
+  {
+   "id": "opex",
+   "label": "Operating expense (adjusted)",
+   "type": "absolute",
+   "low": 3500,
+   "base": 3300,
+   "high": 3100,
+   "source": "Q1 FY2027 call: fiscal 2027 total operating expenses guided $4.15-4.17bn, with operating expense growth of approximately 7% on a management basis and the increase driven by Grand Theft Auto VI marketing and R&D.",
+   "rationale": "Fiscal 2027 opex of roughly $4.16bn on a GAAP basis includes the launch marketing spend, which does not recur. On an adjusted basis, stripping stock compensation, the figure is materially lower. The base of $3.3bn assumes launch marketing falls away while R&D on the 29-title pipeline continues. The low column carries the HIGHER cost."
+  },
+  {
+   "id": "other_income",
+   "label": "Other income, net",
+   "type": "absolute",
+   "low": -20,
+   "base": 40,
+   "high": 80,
+   "source": "Q1 FY2027 call: operating cash flow forecast above $1bn and a net cash position targeted by fiscal year end.",
+   "rationale": "Turns positive as the company moves from net debt to net cash on the launch cash flows. The low case assumes the net cash position slips a year."
+  },
+  {
+   "id": "tax_rate",
+   "label": "Tax rate",
+   "type": "rate",
+   "low": 0.22,
+   "base": 0.18,
+   "high": 0.15,
+   "source": "Reported effective rates have been erratic because of losses and valuation allowances; no fiscal 2028 rate is guided.",
+   "rationale": "Deliberately wide. A company returning to sustained profitability after four loss-making years has an unusually uncertain cash tax position, and prior-year losses may shelter some of the launch-year income."
+  },
+  {
+   "id": "shares",
+   "label": "Diluted shares (m)",
+   "type": "absolute",
+   "low": 192,
+   "base": 190,
+   "high": 188,
+   "source": "185m diluted shares on a trailing basis, up from 117m in fiscal 2022 - a 58% increase over four years.",
+   "rationale": "Dilution has run heavily on stock compensation and the Zynga acquisition, but the pace has slowed and no further large acquisition is assumed. The low column carries the HIGHER count."
+  }
+ ],
+ "notes": "Built on an adjusted basis because Take-Two has not reported a GAAP operating profit since fiscal 2022 and every published estimate is on the adjusted measure; a GAAP build would not be comparable to anything. The adjustment excludes roughly $1.0-1.1bn a year of real but non-cash stock compensation and acquired-intangible amortisation, which is a genuine cost and is why this dashboard scores the Quality dimension negatively. Each column is a coherent scenario; cost, tax and share lines carry their EPS-unfavourable value in low."
+}

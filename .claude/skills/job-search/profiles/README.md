@@ -1,0 +1,1 @@
+Copy profile.example.json to <slug>.json, fill it for a candidate, and set active.txt to the slug (or pass JOB_PROFILE). The real profile and active.txt are ignored by Git because they contain personal information.

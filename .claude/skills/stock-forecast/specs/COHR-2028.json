@@ -1,0 +1,73 @@
+{
+ "ticker": "COHR",
+ "period_label": "FY2028 (year ending June 2028)",
+ "period_end": "2028-06-30",
+ "basis": "non-GAAP, matching the basis management guides on",
+ "method": "Built from the guided first quarter of fiscal 2027 and grown on the order book management describes, then margined at the trajectory it has actually delivered. Coherent has raised non-GAAP gross margin in eight of the last nine quarters for a cumulative 660bps, which is a better guide to the next two years than any single target. Demand corroboration is external: hyperscaler capital expenditure read from SEC filings at Microsoft, Alphabet, Amazon and Meta grew 47-108% year on year in the most recent comparable quarters.",
+ "lines": [
+  {
+   "id": "revenue",
+   "label": "Revenue",
+   "type": "growth",
+   "base_value": 10350,
+   "low": 0.25,
+   "base": 0.35,
+   "high": 0.45,
+   "source": "Q4 FY2026 call, 12 Aug 2026: Q1 FY2027 revenue guided $2.2-2.4bn; fiscal 2027 'basically completely booked out', purchase orders into calendar 2028, long-term agreements with take-or-pay minimums through the end of the decade.",
+   "rationale": "The $10,350m fiscal 2027 base assumes the guided $2.3bn first quarter followed by roughly 8% sequential growth, consistent with the 13% sequential step the guide itself implies off a $2,046m fourth quarter. For fiscal 2028 the base of 35% reflects an order book management says is already booked into calendar 2028; the low case of 25% assumes the AI optical build digests; the high case of 45% assumes co-packaged optics and optical circuit switching ramp on the schedule described."
+  },
+  {
+   "id": "gross_margin",
+   "label": "Gross margin (non-GAAP)",
+   "type": "margin_of",
+   "of": "revenue",
+   "low": 0.41,
+   "base": 0.43,
+   "high": 0.45,
+   "source": "Q4 FY2026 call: Q1 FY2027 non-GAAP gross margin guided 39.5-41.5%; Investor Day target of greater than 42%; margin raised in eight of the last nine quarters for 660bps cumulative.",
+   "rationale": "The base of 43% assumes the >42% target is reached during fiscal 2027 and modestly exceeded in fiscal 2028, which is what the eight-of-nine-quarters trend extrapolates to. The low case holds margin near the top of the current guide, i.e. the target is missed. The high case assumes the 6-inch indium phosphide cost structure - four times the output per wafer at half the cost - delivers more than management has guided."
+  },
+  {
+   "id": "opex",
+   "label": "Operating expense (non-GAAP)",
+   "type": "growth",
+   "base_value": 1700,
+   "low": 0.22,
+   "base": 0.15,
+   "high": 0.1,
+   "source": "Q4 FY2026 call: Q1 FY2027 non-GAAP operating expenses guided $400-420m; fiscal 2026 non-GAAP operating expense of roughly $1,345m implied by 39.4% gross margin against a 20.5% operating margin on $7,118m of revenue.",
+   "rationale": "Annualising the guided $410m quarterly run rate gives about $1,640m; $1,700m is used for fiscal 2027 to allow for the sequential increases management has been guiding. Fiscal 2028 growth of 15% in the base is below revenue growth of 35%, which is the operating leverage the company has been demonstrating. The low column carries the HIGHER cost."
+  },
+  {
+   "id": "other_income",
+   "label": "Other income, net",
+   "type": "absolute",
+   "low": -140,
+   "base": -100,
+   "high": -60,
+   "source": "Reported interest expense against debt leverage reduced to 0.7x from 2.0x, with $513m of debt repaid in fiscal 2026.",
+   "rationale": "Net interest expense, shrinking as the company deleverages. Negative because Coherent still carries net debt, unlike NVIDIA."
+  },
+  {
+   "id": "tax_rate",
+   "label": "Tax rate",
+   "type": "rate",
+   "low": 0.2,
+   "base": 0.18,
+   "high": 0.16,
+   "source": "Reported effective rates; no fiscal 2028 rate has been guided.",
+   "rationale": "No guidance exists for this year, so the range is deliberately wide around a conventional 18% for a US multinational with substantial foreign manufacturing."
+  },
+  {
+   "id": "shares",
+   "label": "Diluted shares (m)",
+   "type": "absolute",
+   "low": 215,
+   "base": 210,
+   "high": 205,
+   "source": "202m diluted shares in the June 2026 quarter, up from 191m a year earlier.",
+   "rationale": "The count has been rising roughly 5% a year on stock compensation and prior convertible settlement, with no buyback. Continued dilution at a decelerating rate is assumed. The low column carries the HIGHER count."
+  }
+ ],
+ "notes": "Built on a non-GAAP basis because that is the basis management guides on and the only basis on which Coherent reports a profit; GAAP operating income was $902m on $7,118m of revenue in fiscal 2026. Each column is a coherent scenario, so cost, tax and share lines carry their EPS-unfavourable value in the low column."
+}

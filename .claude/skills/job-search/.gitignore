@@ -1,0 +1,15 @@
+profiles/active.txt
+profiles/*.json
+!profiles/profile.example.json
+scripts/agent_finds.json
+scripts/baseline_urls.json
+scripts/content_hits.json
+scripts/desc_cache.json
+scripts/eligibility.json
+scripts/final_list.json
+scripts/final_verified.json
+scripts/last_run_final_list.json
+scripts/raw_all.json
+scripts/skills.json
+scripts/*.html
+scripts/*.png
